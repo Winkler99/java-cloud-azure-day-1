@@ -5,12 +5,12 @@ import com.booleanuk.simpleapi.response.BudgetResponse;
 import com.booleanuk.simpleapi.response.ErrorResponse;
 import com.booleanuk.simpleapi.response.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins= "http://localhost:4200")
+@CrossOrigin
 @RestController
 @RequestMapping("budgets")
 public class BudgetController {
